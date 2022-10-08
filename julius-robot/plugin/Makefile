@@ -6,7 +6,7 @@ LDIR1    = $(JDIR)/libjulius
 LDIR2    = $(JDIR)/libsent
 LIBS     = `$(JDIR)/libjulius/libjulius-config --libs` `$(JDIR)/libsent/libsent-config --libs` 
 DEFINES  = `$(JDIR)/libjulius/libjulius-config --cflags` `$(JDIR)/libsent/libsent-config --cflags` 
-PROGNAME = Julius-Robot
+PROGNAME = julius_robot
 
 all : $(PROGNAME).jpi
 
@@ -15,3 +15,8 @@ $(PROGNAME).jpi : $(PROGNAME).o
 
 $(PROGNAME).o : $(PROGNAME).c
 	$(CC) -c $(PROGNAME).c -Wall -I$(IDIR1) -I$(IDIR2) $(DEFINES)
+
+.PHONY: clean
+clean :
+	-rm $(PROGNAME).jpi $(PROGNAME).o
+
