@@ -6,7 +6,7 @@ LDIR1    = $(JDIR)/libjulius
 LDIR2    = $(JDIR)/libsent
 LIBS     = `$(JDIR)/libjulius/libjulius-config --libs` `$(JDIR)/libsent/libsent-config --libs` 
 DEFINES  = `$(JDIR)/libjulius/libjulius-config --cflags` `$(JDIR)/libsent/libsent-config --cflags` 
-PROGNAME = data_collection
+PROGNAME = julius_robot
 
 all : $(PROGNAME).jpi
 
