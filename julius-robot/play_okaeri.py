@@ -6,7 +6,7 @@
 import os
 import winsound
 
-OKAERI_FILE = './voice-okaeri-yasashime.wav'
+OKAERI_FILE = './okaerinasaimattetayo_01.wav'
 
 def play():
   winsound.PlaySound(OKAERI_FILE, winsound.SND_FILENAME)
